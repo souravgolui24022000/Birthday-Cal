@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Cal</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="C:\Users\Sathi\Downloads\Task/styles/style.css" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fav icon -->
+    <link
+      rel="icon"
+      href="C:\Users\Sathi\Downloads\Task/images/favicon-32x32.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="C:\Users\Sathi\Downloads\Task/styles/style.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b23fa7c0ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div id="container">
+      <!-- title -->
+      <div id="title"><i class="far fa-calendar-alt"></i> Birthday Cal</div>
+      <!-- end title -->
+
+      <!-- cards -->
+      <div id="card-container">
+        <div class="card">
+          <div class="card-title">MON</div>
+          <div class="card-body" id="card-mon"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">TUE</div>
+          <div class="card-body" id="card-tue"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">WED</div>
+          <div class="card-body" id="card-wed"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">THUR</div>
+          <div class="card-body" id="card-thur"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">FRI</div>
+          <div class="card-body" id="card-fri"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">SAT</div>
+          <div class="card-body" id="card-sat"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">SUN</div>
+          <div class="card-body" id="card-sun"></div>
+        </div>
+      </div>
+      <!-- end cards -->
+
+      <!-- input-area -->
+      <form action="#" id="birthday-cal">
+        <div id="input-area">
+          <div id="left-half">
+            <label for="json-input">JSON input</label>
+            <textarea
+              name="json-input"
+              id="json-input"
+              placeholder='Enter data in this format [{"name": "Tyrion Lannister","birthday": "12/02/1978"}]'
+              required
+            ></textarea>
+          </div>
+          <div id="right-half">
+            <label for="year-input">Year</label>
+            <input
+              type="text"
+              id="year-input"
+              name="year-input"
+              placeholder="format YYYY"
+              maxlength="4"
+              pattern="\d{4}"
+              required
+            />
+
+            <input type="submit" id="update" value="UPDATE" />
+          </div>
+        </div>
+      </form>
+      <!-- end input-area -->
+      <div class="end-line"></div>
+    </div>
+    <!-- end container -->
+  </body>
+  <script src="./scripts/auxillary.js" defer></script>
+  <script src="./scripts/index.js" defer></script>
+</html>
